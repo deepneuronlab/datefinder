@@ -22,7 +22,9 @@ today = datetime.today()
         ("Jan. 1", datetime(2021, 1, 1), "day"),
 
         ("2.81", None, "day"),
+        ("01.01", None, "day"),
         ("12.81", None, "day"),
+        ("12.12", None, "day"),
         ("123.81", None, "day"),
         ("2,81", None, "day"),
         ("12,81", None, "day"),
