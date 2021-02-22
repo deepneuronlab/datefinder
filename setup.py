@@ -5,9 +5,14 @@ https://packaging.python.org/en/latest/distributing.html
 https://github.com/pypa/sampleproject
 """
 import setuptools
+
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
 setuptools.setup(
     name="datefinder-dnl-extension",
     version="0.0.1",
+    install_requires=requirements,
 
     # The project's main homepage. This particular fork extends the main project in terms of the needs of Berlin based
     # company DNL. To reach DNL write a message to info@dnl.de. In this setup file we reference the original author.

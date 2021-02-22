@@ -1,7 +1,6 @@
 import copy
 import logging
-#import regex as re
-import re
+import regex as re
 from dateutil import tz, parser
 from datefinder.date_fragment import DateFragment
 from .constants import (
